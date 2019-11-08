@@ -80,6 +80,3 @@ sigma=shrinkage*prior+(1-shrinkage)*sample;
 
 
 
-
-
-
