@@ -150,7 +150,7 @@ w1=0.50;
 % (b)
 % short-term procyclical
 % the analyst recommendations revision alpha
-% number of upgrades – number of downgrades
+% number of upgrades â€“ number of downgrades
 
 alpharec=zeros(T,n);
 
@@ -402,21 +402,21 @@ figure(1)
 plot(Date(t0:end),pnl(t0:end),'b','linewidth',1)
 grid on
 title('Cumulative P&L', 'Fontsize',12)
-ylabel('Value (€)', 'Fontsize',12)
+ylabel('Value (â‚¬)', 'Fontsize',12)
 
 
 figure(2)
 plot(Date(t0:end),booksize(t0:end),'b','linewidth',1)
 grid on
 title('Booksize', 'Fontsize',12)
-ylabel('Value (€)', 'Fontsize',12)
+ylabel('Value (â‚¬)', 'Fontsize',12)
 
 
 figure(3)
 plot(Date(t0:end),tradesize(t0:end),'b','linewidth',1)
 grid on
 title('Tradesize', 'Fontsize',12)
-ylabel('Value (€)', 'Fontsize',12)
+ylabel('Value (â‚¬)', 'Fontsize',12)
 
 
 % maximum drawdown plot
@@ -427,4 +427,5 @@ plot(Date(t0:end),pnl(t0:end),'b','linewidth',1)
 hold on
 plot(Date(MaxDDIndex),pnl(MaxDDIndex),'r-o','MarkerSize',10)
 title('Maximum Drawdown', 'Fontsize',12)
-ylabel('Cumulative P&L (€)', 'Fontsize',12)
+ylabel('Cumulative P&L (â‚¬)', 'Fontsize',12)
+
