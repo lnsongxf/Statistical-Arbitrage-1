@@ -62,21 +62,6 @@ myday=datetime(LoadData{4:end,1},'InputFormat','MM/dd/yyyy');  % convert to date
 stocksname=stocksname';
 allnames=unique(stocksname);
 
-% opts = detectImportOptions(filename,'NumHeaderLines',3,'Sheet',sheet_name{2});
-% myData = readtable(filename,opts);
-% myday=myData{:,1};
-% myday.Format = 'dd-MMM-yyy';
-
-
-% for k=2:numel(sheet_name)
-%     opts = detectImportOptions(filename,'NumHeaderLines',3,'Sheet',sheet_name{2});
-%     LoadData=readtable(filename,opts);   
-%     Data{k}=LoadData;
-%     
-% end
-
-% myday=LoadData{:,1};
-% myday.Format = 'dd-MMM-yyy';
 
 T=length(myday);
 n=length(allstocks);
@@ -173,18 +158,6 @@ end
 % Construct a boolean matrix
 isactivenow=true(T,n);
 
-% for i=1:n
-%     myPrice=price(:,i);
-%     Number=sum(isnan(myPrice));
-%     
-%     if Number > 0
-%         isactivenow(:,i)=false(T,1);
-%     else
-%         isactivenow(:,i)=true(T,1);
-%     end
-% end
-
-
 
 for i=1:n
     myPrice=price(:,i);
@@ -196,13 +169,6 @@ for i=1:n
         isactivenow(:,i)=true(T,1);
     end
 end
-
-
-
-
-
-
-
 
 
 
